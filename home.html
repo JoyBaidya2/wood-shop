@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4029/4029779.png">
+    <!--Swiper link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--Font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--icon link-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--Java script silider link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="sticky top-0  lg:sticky lg:top-0 bg-white ">
+        <nav class="flex justify-between items-center p-4 lg:w-[98%]  md:p-4 sm:p-4    lg:mx-auto lg:justify-between lg:items-center">
+            <div class="flex space-x-2">
+                <img class="w-40 h-16" src="https://carpentry-theme.myshopify.com/cdn/shop/files/logo_dc881f78-8289-4508-8d04-818c02fe41fa.png?v=1642340753">
+            </div>
+            <div class="nav-links absolute top-[-510%] md:h-0 lg:h-0 lg:static left-0 lg:top-[-100%] bg-white h-[500px] w-[40%] lg:p-0 pl-8  lg:bg-white">
+                <ul class="flex flex-col gap-y-4 text-slate-600   lg:font-medium lg:flex-row  lg:space-x-12 text-xl ">
+                    <li><a class="hover:text-blue-600 text-orange-400" href="#">Home</a></li>
+                    <li><a class="hover:text-blue-600 hover:underline cursor-pointer href="#">Shop</a></li>
+                    <li><a class="hover:text-blue-600 hover:underline cursor-pointer href="#">Pages</a></li>
+                    <li><a class="hover:text-blue-600 hover:underline cursor-pointer href="#">Blog</a></li>
+                    <li><a class="hover:text-blue-600 hover:underline cursor-pointer href="#">Faq</a></li>
+                    <li><a class="hover:text-blue-600 hover:underline cursor-pointer href="#">Contact</a></li>
+    
+                </ul>
+            </div>
+            <div class="text-xl space-x-5">
+                <i class="fa-solid fa-user cursor-pointer"></i>
+                <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+            </div>
+            <div class="lg:hidden">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl mr-8 lg:hidden cursor-pointer "></ion-icon>
+            </div>
+        </nav><hr>
+       </header>
+       <main class="overflow-hidden">
+        <div class="swiper mySwiper ">
+            <div class="swiper-wrapper text-center w-full bg-cover bg-center lg:rounded-bl-[220px] bg-[url(https://carpentry-theme.myshopify.com/cdn/shop/files/slider-3.jpg?v=1642067542)]">
+              <div class="swiper-slide text-center pt-10 lg:pt-36 text-white"><p class="mb-10 md:[20px] lg:text-xl text-slate-100 ">Custom woodwork with quality</p>
+                <div class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold space-y-4">
+                    <h1>ANTIQUE CARPENTRY</h1>
+                    <h1>WORK WITH SPECIAL</h1>
+                    </h1>PRICE</h1>
+                </div>
+                <button class="mt-10 bg-orange-700 hover:bg-black px-7 py-3 rounded font-medium mb-24">SHOP NOW</button></div>
+              <div class="swiper-slide text-center w-full bg-cover bg-center lg:rounded-bl-[220px] bg-[url(https://carpentry-theme.myshopify.com/cdn/shop/files/slider-1.jpg?v=1642067460)]"><div class="swiper-slide text-center pt-10 lg:pt-36 text-white"><p class="mb-10 md:[20px] lg:text-xl text-slate-100 ">Best quality woodwork at the best expense</p>
+                <div class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold space-y-4">
+                    <h1>A NEW OPPORTUNITY TO</h1>
+                    <h1>BUILD YOUR DREAM</h1>
+                    </h1>HOME</h1>
+                </div>
+                <button class="mt-10 bg-orange-700 hover:bg-black px-7 py-3 rounded font-medium mb-24">SHOP NOW</button></div></div>
+              <div class="swiper-slide text-center w-full bg-cover bg-center lg:rounded-bl-[220px] bg-[url(https://carpentry-theme.myshopify.com/cdn/shop/files/slider-2.jpg?v=1642067499)]"> <div class="swiper-slide text-center pt-10 lg:pt-36 text-white"><p class="mb-10 md:[20px] lg:text-xl text-slate-100 ">Best woodwork with best prices</p>
+                <div class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold space-y-4">
+                    <h1>WE PROVIDE YOU </h1>
+                    <h1>UNEXPECTABLE</h1>
+                    </h1>CARPENTARY SERVICES</h1>
+                </div>
+                <button class="mt-10 bg-orange-700 hover:bg-black px-7 py-3 rounded font-medium mb-24">SHOP NOW</button></div></div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </main>
+
+       <section class="bg-orange-100 pt-12 lg:pt-24">
+
+        <div class="sm:grid sm:grid-cols-2 md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 mx-auto">
+           <div class="text-3xl sm:text-[40px] sm:leading-normal md:text-[30px] md:pt-10 lg:text-4xl xl:text-5xl xl:leading-normal   font-serif text-orange-600 lg:leading-normal lg:mt-9 lg:space-y-4 pl-8 lg:pl-12">
+            <p>We work together to help <br>
+            you create a better future by <br>
+             advancing your best ideas <br>
+            forward.</p>
+            <p class="text-slate-900 text-xl lg:text-2xl leading-10 pt-6 lg:pt-8">
+                We do this by making better materials and better thoughtful processes that adjust what you can do <br> and how you do it.
+            </p>
+           </div>
+            <div>
+                <img class="lg:pl-12" src="https://carpentry-theme.myshopify.com/cdn/shop/files/custom-img_9a230efd-f24a-4ca3-b438-2b8a254b2415.png?v=1642508313" alt="">
+                <p class="pl-6 text-xl leading-9">
+                    Venenatis cras sed felis eget velit aliquet sagittis. Convallis tellus id interdum velit laoreet id donec ultrices. Nisl pretium fusce id velit ut tortor pretium viverra. Tempor commodo ullamcorper a lacus. Quis imperdiet massa tincidunt nunc. Senectus et netus et malesuada. Pellentesque dignissim enim sit amet venenatis urna.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-20 lg:mt-32 text-center">
+            <p class="font-semibold text-orange-500 text-xl">WELCOME TO CARPENTRY</p>
+            <h1 class="font-medium font-serif text-4xl lg:text-5xl pt-4">Featured Products</h1>
+        </div>
+
+        <div class="mt-10  px-12 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 gap-8 lg:px-6">
+            <div class="text-center">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/products/shop08_600x.jpg?v=1642069288" alt="">
+                <p class="pt-2 font-serif text-2xl">Wooden Hammer</p>
+                <p class="pt-1 font-sans font-bold text-2xl">Rs.790.00</p>
+            </div>
+            <div class="text-center">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/products/shop002_600x.jpg?v=1643000137" alt="">
+                <p class="pt-2 font-serif text-2xl">Timber Logs</p>
+                <p class="pt-1 font-sans font-bold text-2xl">Rs.829.00</p>
+            </div>
+            <div class="text-center">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/products/shop003_1_600x.jpg?v=1643002608" alt="">
+                <p class="pt-2 font-serif text-2xl">Electric Drill</p>
+                <p class="pt-1 font-sans font-bold text-2xl">Rs.699.00</p>
+            </div>
+            <div class="text-center">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/products/shop05_600x.jpg?v=1642069189" alt="">
+                <p class="pt-2 font-serif text-2xl">Framing square</p>
+                <p class="pt-1 font-sans font-bold text-2xl">Rs.625.00</p>
+            </div>
+            <div class="text-center">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/products/shop04_600x.jpg?v=1642069161" alt="">
+                <p class="pt-2 font-serif text-2xl">Drill For Woodland</p>
+                <p class="pt-1 font-sans font-bold text-2xl">Rs.769.00</p>
+            </div>
+            <div class="text-center">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/products/shop03_600x.jpg?v=1642069092" alt="">
+                <p class="pt-2 font-serif text-2xl">Carpenters Gloves</p>
+                <p class="pt-1 font-sans font-bold text-2xl">Rs.s59.00</p>
+            </div>
+            <div class="text-center">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/products/shop02_600x.jpg?v=1642069038" alt="">
+                <p class="pt-2 font-serif text-2xl">Tape Measure</p>
+                <p class="pt-1 font-sans font-bold text-2xl">Rs.819.00</p>
+            </div>
+            <div class="text-center">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/products/shop01_2000x.jpg?v=1643000882" alt="">
+                <p class="pt-2 font-serif text-2xl">Planking Tool</p>
+                <p class="pt-1 font-sans font-bold text-2xl">Rs.569.00</p>
+            </div>
+        </div>
+
+        <div class="mt-10  mb-6 px-12 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 gap-8 lg:px-6">    
+        </div>
+       </section>
+      
+       <section class="bg-green-50 ">
+        <div class="space-y-10 sm:space-y-0  px-10 pt-32 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-3 text-center gap-10">
+            <div class="flex flex-col items-center justify-center">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/files/icon_01_300x300.png?v=1642057403" alt="">
+                <h1 class="text-orange-800 text-3xl py-6 font-bold">Clean Design</h1>
+                <p class="text-lg">Zhasellus quis enim rutrum orci rutrum venenatis porta id erat. Phasellus ac imperdiet neque. Nullam nisi dolor, ultricies</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/files/icon_02_300x300.png?v=1642057427" alt="">
+                <h1 class="text-orange-800 text-3xl py-6 font-bold">Quality Materials</h1>
+                <p class="text-lg">Chasellus quis enim rutrum orci rutrum venenatis porta id erat. Phasellus ac imperdiet neque. Nullam nisi dolor, ultricies</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/files/icon_03_300x300.png?v=1642057441" alt="">
+                <h1 class="text-orange-800 text-3xl py-6 font-bold">Handmade Products</h1>
+                <p class="text-lg">Phasellus quis enim rutrum orci rutrum venenatis porta id erat. Phasellus ac imperdiet neque. Nullam nisi dolor, ultricies</p>
+            </div>
+        </div>
+        <div class="sm:grid sm:grid-cols-2 lg:pt-16 px-6 lg:grid lg:grid-cols-2">
+            <div class="pt-16 space-y-5 sm:pr-28 lg:pl-12 lg:pt-32   lg:pr-44">
+                <div class="pb-6">
+                    <h1 class="text-orange-400 font-semibold text-xl">ABOUT US</h1>
+                    <P class="pt-4 lg:text-5xl sm:text-4xl font-serif">We alter views into works of art</P>
+                </div>
+                <div class="pb-6">
+                    <h1 class="font-bold text-2xl pb-3">Logs Design</h1>
+                    <p class="lg:text-[18px] sm:text-[16px] text-gray-900">Tincidunt lobortis feugiat vivamus at augue eget arcu dictum variustas purus viverra accumsan amsit are sit arciu at decs.</p>
+                </div>
+                <div>
+                    <h1 class="font-bold text-2xl pb-3">Good material</h1>
+                    <p class="lg:text-[18px] text-gray-900 sm:text-[16px] ">Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Risus sed vulputate odio ut enim blandit volutpat maecen.</p>
+                    <button class="mt-10 px-10 py-3 bg-black text-white hover:bg-orange-400 mb-10">READ MORE</button>
+                </div>
+            </div>
+            <div>
+                <img class="sm:h-[85%] sm:object-cover sm:mt-20" src="https://carpentry-theme.myshopify.com/cdn/shop/files/About_us_img.jpg?v=1642057567" alt="">
+            </div>
+        </div>
+
+        <div class="text-center pt-8">
+            <h1 class="text-orange-800 pb-2 text-xl font-semibold">UNIQUE PRODUCTS</h1>
+            <p class="text-4xl font-serif font-bold">Unbendable creations</p>
+        </div>
+
+        <div class="px-10 space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-10 sm:space-y-0 sm:gap-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:px-10 pt-10 lg:gap-y-12 lg:gap-x-10">
+            <div class="hover:opacity-30">
+                <img  src="https://carpentry-theme.myshopify.com/cdn/shop/products/woodenpro1_600x.jpg?v=1642069318" alt="">
+            </div>
+            <div class="hover:opacity-30">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/products/woodenpro2_600x.jpg?v=1642069466" alt="">
+            </div>
+            <div class="hover:opacity-30">
+                <img  src="https://carpentry-theme.myshopify.com/cdn/shop/products/woodenpro4_600x.jpg?v=1642069707" alt="">
+            </div>
+            <div class="hover:opacity-30">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/products/woodenpro3_600x.jpg?v=1642069657" alt="">
+            </div>
+            <div class="hover:opacity-30">
+                <img  src="https://carpentry-theme.myshopify.com/cdn/shop/products/woodenpro5_600x.jpg?v=1642070111" alt="">
+            </div>
+            <div class="hover:opacity-30">
+                <img src="https://carpentry-theme.myshopify.com/cdn/shop/products/woodenpro6_600x.jpg?v=1642070202" alt="">
+            </div>
+        </div>
+        <div class="text-center pt-12">
+            <button class="bg-orange-700 text-white font-semibold hover:bg-black px-16 py-4">VIEW ALL PRODUCT</button>
+        </div>
+
+        
+       </section>
+
+
+       <script>
+        const navLinks = document.querySelector(".nav-links");
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle("top-[100.5%]");
+        }
+
+        var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+       </script>
+</body>
+</html>
