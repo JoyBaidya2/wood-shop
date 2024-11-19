@@ -1,10 +1,12 @@
+//Responsive design button click section
+
 const navLinks = document.querySelector(".nav-links");
 function onToggleMenu(e){
     e.name = e.name === 'menu' ? 'close' : 'menu'
-    navLinks.classList.toggle("top-[92%]");
+    navLinks.classList.toggle("top-[78%]");
 }
 
-
+//image slider 
 const slider = document.getElementById('slider');
 const slides = slider.children;
 const prevBtn = document.getElementById('prevBtn');

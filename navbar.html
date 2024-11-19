@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar page!</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <title>Navbar Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-    <div>
-        <nav class="bg-orange-600 p-5 text-white ">
-            <ul class="flex max-w-7xl mx-auto space-x-6 justify-center font-bold">
-                <li><a href="navbar.html">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Blog</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="text-center font-bold ">
-        hello suit
-    </div>
+    <section class="sticky top-0 z-50">
+        <div>
+            <nav class="flex justify-between items-center p-5  sm:px-20 md:px-28  lg:mx-auto lg:justify-between lg:items-center bg-yellow-700 rounded-lg"> 
+                <div class="nav-links w-full  absolute  lg:static left-0 top-[-900%] mx-auto justify-between items-center">
+                    <ul class="flex flex-col gap-y-4 py-6 md:py-0  lg:font-medium lg:flex-row  items-center lg:space-x-14 bg-yellow-700  text-white ">
+                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold" ><a href="index.html">HOME</a></li>
+                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="#">ABOUT</a></li>
+                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="#">SERVICES</a></li>
+                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="shop.html">SHOP</a></li>
+                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="#">PAGE</a></li>
+                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="#">CONTCT</a></li>
+                    </ul>
+                </div>
+                <div class="flex space-x-4"> 
+                    <a class="text-3xl cursor-pointer text-white font-medium rounded-md "><ion-icon name="person"></ion-icon></a>
+                    <a class="text-3xl cursor-pointer text-white font-medium rounded-md " href="#"><ion-icon name="cart"></ion-icon></a>
+                </div>
+                <div class="lg:hidden">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl mr-8 lg:hidden text-white cursor-pointer "></ion-icon>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <script src="javascript.js"></script>
 </body>
 </html>
