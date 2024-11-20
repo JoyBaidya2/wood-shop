@@ -5,48 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact section!</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 <body>
     <div id="navbar">
 
     </div>
-    <div>
-        <h1>hi joy</h1>
-    </div>
-    <div class="max-w-sm mx-auto p-4 bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-      <!-- Product Image -->
-      <img src="https://via.placeholder.com/300" alt="Product Image" class="w-full h-[200px] object-cover rounded-t-lg">
-  
-      <!-- Product Info -->
-      <div class="p-4">
-          <!-- Product Name -->
-          <h2 class="text-lg font-bold text-gray-800 mb-2">Stylish Modern Chair</h2>
-  
-          <!-- Product Description -->
-          <p class="text-gray-600 text-sm mb-4">
-              A beautifully crafted chair for comfort and style, perfect for your living room or office.
-          </p>
-  
-          <!-- Price -->
-          <div class="flex items-center justify-between mb-4">
-              <span class="text-lg font-semibold text-orange-600">$120.00</span>
-              <span class="text-sm text-gray-500 line-through">$150.00</span>
+
+    <section class="mb-12 ">
+        <div class="h-[300px] w-full bg-cover rounded-lg bg-center bg-[url(https://frequip.com/wp-content/uploads/2024/07/Top-Furniture-Shops-in-Noida.jpg)]">
+            <div class="pt-64 pl-20 text-white font-bold text-2xl ">
+                <button class="hover:text-orange-300 "><a href="index.html">Home </a></button> /
+                <button class="hover:text-orange-300"><a href="contact.html">Contact</a></button>         
+            </div>
+
+        </div>
+    </section>
+   
+    <section>
+        <div class="min-h-screen flex items-center justify-center px-4">
+            <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-4xl">
+              <h1 class="text-2xl lg:text-3xl font-bold text-gray-800 text-center">Contact Us</h1>
+              <p class="text-gray-600 text-center mt-2">We want to hear from you!</p>
+        
+              <!-- Contact Form -->
+              <form class="mt-8 space-y-4">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-gray-800" 
+                    placeholder="Joy Baidya"
+                  >
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-gray-800" 
+                    placeholder="you@gmail.com"
+                  >
+                </div>
+
+                <div>
+                  <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                  <input 
+                    type="text" 
+                    id="subject" 
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-gray-800" 
+                    placeholder="Subject"
+                  >
+                </div>
+        
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                  <textarea 
+                    id="message" 
+                    rows="4" 
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-gray-800" 
+                    placeholder="Write your message here..."
+                  ></textarea>
+                </div>
+
+                <div class="text-center">
+                  <button 
+                    type="submit" 
+                    class="w-full lg:w-auto bg-blue-500 text-white font-medium py-2 px-6 rounded-md shadow hover:bg-blue-600 transition"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+
+              <div class="mt-10 border-t pt-6 text-gray-600 text-center space-y-4">
+                <p><span class="font-semibold text-gray-800">Address:</span> Mirpur10, Dhaka, Bangladesh</p>
+                <p><span class="font-semibold text-gray-800">Email:</span> joybaidyabd@gmail.com</p>
+                <p><span class="font-semibold text-gray-800">Phone:</span> +8801865267895</p>
+              </div>
+            </div>
           </div>
-  
-          <!-- Order Button -->
-          <button class="w-full bg-orange-600 text-white py-2 rounded-lg hover:bg-orange-700 transition">
-              Order Now
-          </button>
-      </div>
-  </div>
-  
+    </section>
+
+    <div id="footer">
+
+    </div>
     
+
+    <script src="javascript.js"></script>
 <script>
   fetch('./navbar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('navbar').innerHTML = data;
     });
+    fetch('./footer.html')
+    .then(response => response.text())
+    .then(data => {
+       document.getElementById('footer').innerHTML = data;
+     })
 </script>
 </body>
 </html>

@@ -15,17 +15,28 @@
                 <div class="nav-links w-full  absolute  lg:static left-0 top-[-900%] mx-auto justify-between items-center">
                     <ul class="flex flex-col gap-y-4 py-6 md:py-0  lg:font-medium lg:flex-row  items-center lg:space-x-14 bg-yellow-700  text-white ">
                         <li class="hover:underline hover:text-orange-200 hover:font-extrabold" ><a href="index.html">HOME</a></li>
-                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="#">ABOUT</a></li>
-                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="#">SERVICES</a></li>
+                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="about.html">ABOUT</a></li>
+                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="service.html">SERVICES</a></li>
                         <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="shop.html">SHOP</a></li>
-                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="#">PAGE</a></li>
-                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="#">CONTCT</a></li>
+                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
                 <div class="flex space-x-4"> 
-                    <a class="text-3xl cursor-pointer text-white font-medium rounded-md "><ion-icon name="person"></ion-icon></a>
+                    <div class="relative">
+                        <button id="dropdownButton" class="  focus:outline-none">
+                          <a class="text-3xl cursor-pointer text-white font-medium rounded-md "><ion-icon name="person"></ion-icon></a>
+                        </button>
+
+                        <div id="dropdownMenu" class="absolute mt-5 w-44 bg-white border border-gray-200 rounded-md shadow-lg hidden">
+                          <a href="login.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Login</a>
+                          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Create Account</a>
+                         
+                        </div>
+                      </div>
+
                     <a class="text-3xl cursor-pointer text-white font-medium rounded-md " href="#"><ion-icon name="cart"></ion-icon></a>
                 </div>
+
                 <div class="lg:hidden">
                     <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl mr-8 lg:hidden text-white cursor-pointer "></ion-icon>
                 </div>

@@ -6,6 +6,19 @@ function onToggleMenu(e){
     navLinks.classList.toggle("top-[78%]");
 }
 
+//login and register section
+const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    dropdownButton.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+    });
+    window.addEventListener('click', (e) => {
+      if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.classList.add('hidden');
+      }
+    });
+
 //image slider 
 const slider = document.getElementById('slider');
 const slides = slider.children;
@@ -40,19 +53,18 @@ if (index === currentIndex) {
 });
 }
 
-// Move to Previous Slide
+// Here work Move to Previous Slide
 prevBtn.addEventListener('click', () => {
 currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
 updateSlider();
 });
 
-// Move to Next Slide
+// Here work Move to Next Slide
 nextBtn.addEventListener('click', () => {
 currentIndex = (currentIndex + 1) % totalSlides;
 updateSlider();
 });
 
-// Indicator Click Events
 indicators.forEach((indicator, index) => {
 indicator.addEventListener('click', () => {
 currentIndex = index;
@@ -76,9 +88,7 @@ clearInterval(autoSlideInterval);
 slider.addEventListener('mouseover', stopAutoSlide);
 slider.addEventListener('mouseout', startAutoSlide);
 
-// Resize Listener for Responsive Updates
 window.addEventListener('resize', updateSlider);
 
-// Initialize
 updateSlider();
 startAutoSlide();
