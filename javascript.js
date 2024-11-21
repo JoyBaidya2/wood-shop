@@ -1,25 +1,50 @@
+// Here the navbar and footer works when we use all section same nav and footer section..
+fetch('./navbar.html')
+.then((response) => response.text())
+.then((data) => {
+    document.getElementById('navbar').innerHTML = data;
+    initializeNavbarEvents();
+})
+.catch((error) => console.error('Error loading navbar:', error));
+
+fetch('./footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    })
+
 //Responsive design button click section
+function initializeNavbarEvents() {
+  const navLinks = document.getElementById('nav-links');
+  const dropdownButton = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
 
-const navLinks = document.querySelector(".nav-links");
-function onToggleMenu(e){
-    e.name = e.name === 'menu' ? 'close' : 'menu'
-    navLinks.classList.toggle("top-[78%]");
-}
+  // Menu toggle functionality
+  const menuIcon = document.querySelector('[onclick="onToggleMenu(this)"]');
+  if (menuIcon) {
+    menuIcon.addEventListener('click', (e) => {
+      e.target.name = e.target.name === 'menu' ? 'close' : 'menu';
+      navLinks.classList.toggle('top-[78%]');
+    });
+  }
 
-//login and register section
-const dropdownButton = document.getElementById('dropdownButton');
-    const dropdownMenu = document.getElementById('dropdownMenu');
-
+  // Dropdown toggle functionality
+  if (dropdownButton) {
     dropdownButton.addEventListener('click', () => {
       dropdownMenu.classList.toggle('hidden');
     });
+
+    // Close dropdown if clicked outside
     window.addEventListener('click', (e) => {
       if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
         dropdownMenu.classList.add('hidden');
       }
     });
+  }
+}
 
-//image slider 
+
+//image slider section start
 const slider = document.getElementById('slider');
 const slides = slider.children;
 const prevBtn = document.getElementById('prevBtn');
@@ -92,3 +117,7 @@ window.addEventListener('resize', updateSlider);
 
 updateSlider();
 startAutoSlide();
+
+//Here the main work is when we click the order button then show the full show details page.
+
+

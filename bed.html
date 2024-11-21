@@ -45,7 +45,7 @@
                         <h2 class="font-medium text-lg text-orange-500">RS:14500.00</h2>
                      </div>
                      <div>
-                        <button class="mt-2 bg-orange-600 px-12 py-1 rounded-lg text-white font-medium text-xl hover:bg-orange-800"><a href="#">Order Now</a></button>
+                        <button class="mt-2 bg-orange-600 px-12 py-1 rounded-lg text-white font-medium text-xl hover:bg-orange-800"  onclick="orderNow(1)">Order Now</button>
                         <button class="mt-2 bg-amber-400 px-12 py-1 rounded-lg text-black font-medium text-xl hover:bg-amber-200"><a href="#">Add to cart</a></button>
                      </div>
             </div>
@@ -58,7 +58,7 @@
                         <h2 class="font-medium text-lg text-orange-500">RS:13500.00</h2>
                      </div>
                      <div>
-                        <button class="mt-2 bg-orange-600 px-12 py-1 rounded-lg text-white font-medium text-xl hover:bg-orange-800"><a href="#">Order Now</a></button>
+                        <button class="mt-2 bg-orange-600 px-12 py-1 rounded-lg text-white font-medium text-xl hover:bg-orange-800" onclick="orderNow(2)" >Order Now</button>
                         <button class="mt-2 bg-amber-400 px-12 py-1 rounded-lg text-black font-medium text-xl hover:bg-amber-200"><a href="#">Add to cart</a></button>
                      </div>
             </div>
@@ -148,18 +148,7 @@
 
         </div>
     </section>
-    <script>
-        fetch('./navbar.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-          });
-          fetch('./footer.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('footer').innerHTML = data;
-          })
-      </script>
+    
     <script src="javascript.js"></script>
 </body>
 </html>
