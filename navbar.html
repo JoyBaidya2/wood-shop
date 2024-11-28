@@ -18,6 +18,7 @@
                         <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="about.html">ABOUT</a></li>
                         <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="service.html">SERVICES</a></li>
                         <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="shop.html">SHOP</a></li>
+                        <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="blog.html">BLOGS</a></li>
                         <li class="hover:underline hover:text-orange-200 hover:font-extrabold"><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
@@ -30,11 +31,12 @@
                         <div id="dropdownMenu" class="absolute mt-5 w-44 bg-white border border-gray-200 rounded-md shadow-lg hidden">
                           <a href="login.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Login</a>
                           <a href="registrationForm.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Create Account</a>
-                         
                         </div>
                       </div>
 
-                    <a class="text-3xl cursor-pointer text-white font-medium rounded-md " href="#"><ion-icon name="cart"></ion-icon></a>
+                    <div  class="relative" onclick="toggleCart()">
+                        <ion-icon class="text-3xl cursor-pointer text-white font-medium rounded-md " name="cart"></ion-icon><span id="cartBadge" class="absolute  cursor-pointer bg-yellow-800 text-white text-sm font-bold px-2 py-1 rounded-full ">0</span>
+                    </div>
                 </div>
 
                 <div class="lg:hidden">

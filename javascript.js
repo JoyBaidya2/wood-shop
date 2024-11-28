@@ -13,6 +13,7 @@ fetch('./footer.html')
         document.getElementById('footer').innerHTML = data;
     })
 
+    
 //Responsive design button click section
 function initializeNavbarEvents() {
   const navLinks = document.getElementById('nav-links');
@@ -119,5 +120,4 @@ updateSlider();
 startAutoSlide();
 
 //Here the main work is when we click the order button then show the full show details page.
-
 

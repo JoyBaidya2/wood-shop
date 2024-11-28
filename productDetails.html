@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body class="bg-gray-100">
+    
+  <div id="navbar" class="sticky top-0 z-50">
+
+  </div>
+    <!-- Product Details Section -->
+    <div class="max-w-4xl  mx-auto p-4 mt-14">
+        <div id="product-details" class="bg-white rounded-lg shadow p-6 ">
+           
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+    <script src="productDetails.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
